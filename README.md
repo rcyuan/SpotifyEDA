@@ -1,1 +1,5 @@
-# Spotify_EDA
+# SpotifyEDA
+
+Personal project, using Spotify streaming data to practice organizing and cleaning data, running some exploratory analyses, and implementing some basic machine learning models. Coded in Python, laid out in Jupyter notebooks. There are two notebooks thus far - the first, SpotifyEDA-get_features.ipynb, organizes streaming data and queries the Spotify API to get audio features for each song; the second, SpotifyEDA-feature_EDA.ipynb, uses the resulting song/feature information from the first to try some exploratory analyses and basic modeling. The .pkl files provided are examples of data that are generated during execution of first notebook and (3 of the 4 files) are required for execution of the second notebook.
+
+Streaming data are in \DataFiles\; these .json files were directly requested from Spotify and contain a year's worth of streaming information - what songs were listened to (artist and track name) when (date and time). To query the Spotify API for audio features for each of these songs, you need to first find each song's unique Spotify ID; the ID is then used in the query for audio features. 
